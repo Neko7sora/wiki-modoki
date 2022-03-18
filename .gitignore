@@ -1,0 +1,21 @@
+
+.env
+!.vscode
+
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.history
+
+
+.DS_Store
+Thumbs.db
+
+node_modules
+.env
+
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+/.yarn/*
+install-state.gz
