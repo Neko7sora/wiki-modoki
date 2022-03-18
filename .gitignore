@@ -2,13 +2,12 @@
 .env
 !.vscode
 
+site
+
 _site
 .sass-cache
-.jekyll-cache
-.jekyll-metadata
 vendor
 .history
-
 
 .DS_Store
 Thumbs.db
