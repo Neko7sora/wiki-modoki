@@ -1,0 +1,22 @@
+site_name: Wiki-modoki
+docs_dir: 'docs'
+
+theme:
+  name: material
+  language: ja
+  icon:
+      logo: material/school
+      repo: fontawesome/brands/git-alt
+  palette:
+    primary: green
+    accent: pink
+#  favicon: favicon.png
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+# Copyright
+copyright: 'Copyright © <>'
