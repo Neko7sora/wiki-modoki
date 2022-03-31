@@ -3,6 +3,7 @@ docs_dir: 'docs'
 
 theme:
   name: material
+  custom_dir: overrides
   language: ja
   icon:
       logo: material/school
@@ -13,19 +14,19 @@ theme:
       primary: green
       accent: pink
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to light mode
   features:
     - navigation.instant
     - navigation.tabs
-    - navigation.expand
     - toc.integrate
     - search.suggest
+    - header.autohide
 #  favicon: favicon.png
 
 repo_url: https://github.com/Neko7sora/wiki-modoki
@@ -34,6 +35,8 @@ edit_uri: edit/develop/docs/
 
 plugins:
   - git-revision-date
+  - search:
+      lang: ja
 
 extra_css:
   - stylesheets/extra.css
@@ -42,7 +45,7 @@ extra_javascript:
   - javascripts/extra.js
 
 # Copyright
-#copyright: 'Copyright © <>'
+copyright: 'Portions of this content are ©2022 by individual contributors. Content available under a Creative Commons license.'
 
 extra:
   social:
