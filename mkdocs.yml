@@ -6,11 +6,34 @@ theme:
   language: ja
   icon:
       logo: material/school
-      repo: fontawesome/brands/git-alt
+      repo: fontawesome/brands/github
   palette:
-    primary: green
-    accent: pink
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: pink
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
 #  favicon: favicon.png
+
+repo_url: https://github.com/Neko7sora/wiki-modoki
+repo_name: Neko7sora/wiki-modoki
+edit_uri: edit/develop/docs/
+
+plugins:
+  - git-revision-date
 
 extra_css:
   - stylesheets/extra.css
@@ -19,4 +42,36 @@ extra_javascript:
   - javascripts/extra.js
 
 # Copyright
-copyright: 'Copyright © <>'
+#copyright: 'Copyright © <>'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Neko7sora/wiki-modoki
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
