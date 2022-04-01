@@ -55,3 +55,8 @@ GitHub の機能をできる限り活用してWikiを構築するために開発
 
 - :fontawesome-brands-edge-legacy: **Edge Legacy** – サポートしません。
 - :fontawesome-brands-internet-explorer: **Internet Explorer** - サポートしません。
+
+## コミュニティ
+GitHubのディスカッション機能を使っています。
+
+https://github.com/Neko7sora/wiki-modoki/discussions
